@@ -21,6 +21,7 @@ export async function createCommand(projectName: string, platform: PlatformType)
 		if (err) {
 			spinner.fail();
 			console.log(logSymbols.error, chalk.red('下载失败,失败原因', err));
+			return;
 		}
 		spinner.succeed();
 		console.log(logSymbols.success, chalk.yellow('下载成功'));

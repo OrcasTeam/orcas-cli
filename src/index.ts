@@ -11,11 +11,11 @@ import { createCommand } from './command';
 const version = require('../package.json').version;
 
 clear();
-console.log(chalk.red(figlet.textSync('orcas-cli', { horizontalLayout: 'full' })));
+console.log(chalk.red(figlet.textSync('orca-cli', { horizontalLayout: 'full' })));
 
 program
 	.version(version)
-	.description('An example CLI for ordering orcas')
+	.description('An example CLI for ordering orca')
 	.addOption(
 		new Option('-p, --platform <type>', 'select platform')
 			.choices(platforms())

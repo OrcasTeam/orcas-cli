@@ -1,17 +1,18 @@
 {
-	"name": "orcas-cli",
-	"version": "0.1.0",
+	"name": "@orca-studio/cli",
+	"version": "0.1.1",
 	"main": "./lib/index.js",
 	"license": "MIT",
+	"author": "orca-studio",
 	"scripts": {
 		"start": "nodemon --watch 'src/**/*.ts' --exec cross-env 'ts-node' src/index.ts",
 		"create": "npm run build && npm run test",
 		"build": "tsc -p .",
-		"local": "npm i -g && orcas",
+		"local": "npm i -g && orca",
 		"refresh": "rm -rf ./node_modules ./package-lock.json && npm install"
 	},
 	"bin": {
-		"orcas": "./lib/index.js"
+		"orca": "./lib/index.js"
 	},
 	"dependencies": {
 		"chalk": "^4.1.1",
@@ -24,7 +25,9 @@
 		"ora": "^5.4.1"
 	},
 	"devDependencies": {
+		"@types/chalk": "^2.2.0",
 		"@types/clear": "^0.1.2",
+		"@types/commander": "^2.12.2",
 		"@types/figlet": "^1.5.4",
 		"@types/inquirer": "^7.3.3",
 		"@types/log-symbols": "^3.0.0",
