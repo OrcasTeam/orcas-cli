@@ -1,4 +1,4 @@
-# orca-cli
+# @orca-studio/cli
 
 this is a full cli. Have prevalent application are choice:
 
@@ -9,3 +9,9 @@ this is a full cli. Have prevalent application are choice:
 > npm install -g @orca-studio/cli
 >
 > orca create my-project
+
+<br/>
+
+[@orca-studio/cli github](https://github.com/orca-studio/orca-cli)
+
+[vue-template github](https://github.com/orca-studio/vue-template)
