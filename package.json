@@ -1,9 +1,31 @@
 {
 	"name": "@orca-studio/cli",
-	"version": "0.1.4",
+	"version": "0.2.1",
 	"main": "./lib/index.js",
 	"license": "MIT",
 	"author": "orca-studio",
+	"files": [
+		"lib"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/orca-studio/orca-cli.git"
+	},
+	"homepage": "https://github.com/orca-studio/orca-cli#readme",
+	"bugs": {
+		"url": "https://github.com/orca-studio/orca-cli/issues",
+		"email": "yanzhangshuai@126.com"
+	},
+	"keywords": [
+		"orca",
+		"orca-studio",
+		"cli",
+		"web",
+		"template",
+		"vite",
+		"webpack",
+		"vue"
+	],
 	"scripts": {
 		"start": "nodemon --watch 'src/**/*.ts' --exec cross-env 'ts-node' src/index.ts",
 		"create": "npm run build && npm run test",

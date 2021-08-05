@@ -16,7 +16,8 @@ export async function createCommand(projectName: string, platform: PlatformType)
 
 	const url = await getUrl();
 
-	const spinner = ora(logSymbols.success + ' 正在下载模板中').start();
+	console.log('当前地址为:' + url);
+	const spinner = ora(logSymbols.success + ' 正在下载模板中,请耐心等待').start();
 	download(url, projectName, { clone: true }, (err: string) => {
 		if (err) {
 			spinner.fail();

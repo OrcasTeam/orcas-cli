@@ -12,6 +12,4 @@ this is a full cli. Have prevalent application are choice:
 
 <br/>
 
-[@orca-studio/cli github](https://github.com/orca-studio/orca-cli)
-
-[vue-template github](https://github.com/orca-studio/vue-template)
+[vue-template](https://github.com/orca-studio/vue-template)
