@@ -2,8 +2,7 @@ import inquirer from 'inquirer';
 import { FrameType, ScaffoldType, UIType, VersionType } from './types';
 import { supportFrames, supportPCScaffold, supportUI, supportVersion } from './supports';
 const author = require('../package.json').author;
-
-const urlPrefix = `https://github.com:${author}`;
+const urlPrefix = `https://github.com:${author.name}`;
 
 const LINE_MATCH = /\n|\r|\r\n|\s/g;
 
