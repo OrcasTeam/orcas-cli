@@ -1,62 +1,60 @@
 {
-	"name": "@orca-studio/cli",
-	"version": "0.2.6",
-	"main": "./lib/index.js",
-	"license": "MIT",
-	"author": "orca-studio",
-	"files": [
-		"lib"
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/orca-studio/orca-cli.git"
-	},
-	"homepage": "https://github.com/orca-studio/orca-cli#readme",
-	"bugs": {
-		"url": "https://github.com/orca-studio/orca-cli/issues",
-		"email": "yanzhangshuai@126.com"
-	},
-	"keywords": [
-		"orca",
-		"orca-studio",
-		"cli",
-		"web",
-		"template",
-		"vite",
-		"webpack",
-		"vue"
-	],
-	"scripts": {
-		"start": "nodemon --watch 'src/**/*.ts' --exec cross-env 'ts-node' src/index.ts",
-		"create": "npm run build && npm run test",
-		"build": "tsc -p .",
-		"local": "npm i -g && orca",
-		"refresh": "rm -rf ./node_modules ./package-lock.json && npm install"
-	},
-	"bin": {
-		"orca": "./lib/index.js"
-	},
-	"dependencies": {
-		"chalk": "^4.1.1",
-		"clear": "^0.1.0",
-		"commander": "^8.0.0",
-		"download-git-repo": "^3.0.2",
-		"figlet": "^1.5.0",
-		"inquirer": "^8.1.2",
-		"log-symbols": "4.1.0",
-		"ora": "^5.4.1"
-	},
-	"devDependencies": {
-		"@types/chalk": "^2.2.0",
-		"@types/clear": "^0.1.2",
-		"@types/commander": "^2.12.2",
-		"@types/figlet": "^1.5.4",
-		"@types/inquirer": "^7.3.3",
-		"@types/log-symbols": "^3.0.0",
-		"@types/node": "^16.4.3",
-		"cross-env": "^7.0.3",
-		"nodemon": "^2.0.12",
-		"ts-node": "^10.1.0",
-		"typescript": "^4.3.5"
-	}
+  "name": "mwjz-cli",
+  "version": "1.0.0",
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "author": "yanzhangshuai",
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yanzhangshuai/mwjz-cli.git"
+  },
+  "homepage": "https://github.com/yanzhangshuai/mwjz-cli#readme",
+  "bugs": {
+    "url": "https://github.com/yanzhangshuai/mwjz-cli/issues",
+    "email": "yanzhangshuai@126.com"
+  },
+  "keywords": [
+    "mwjz",
+    "cli",
+    "web",
+    "template",
+    "vite",
+    "webpack",
+    "vue"
+  ],
+  "scripts": {
+    "dev": "esno src/index.ts",
+    "build": "rimraf dist && tsup src/index.ts --format cjs,esm --dts"
+  },
+  "bin": {
+    "mwjz": "./dist/index.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "clear": "^0.1.0",
+    "commander": "^9.1.0",
+    "download-git-repo": "^3.0.2",
+    "figlet": "^1.5.2",
+    "inquirer": "^8.2.2",
+    "log-symbols": "^4.1.0",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/clear": "^0.1.2",
+    "@types/figlet": "^1.5.4",
+    "@types/inquirer": "^8.2.0",
+    "@types/node": "^17.0.23",
+    "@types/rimraf": "^3.0.2",
+    "esno": "^0.14.1",
+    "prompts": "^2.4.2",
+    "rimraf": "^3.0.2",
+    "tsup": "^5.12.1",
+    "typescript": "^4.6.3"
+  }
 }

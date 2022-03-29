@@ -1,3 +1,5 @@
+export type ProjectType = 'mpa' | 'spa';
+
 export type PlatformType = 'pc' | 'mini';
 
 export type FrameType = 'vue' | 'react';

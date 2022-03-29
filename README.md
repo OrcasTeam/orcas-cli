@@ -1,4 +1,4 @@
-# @orca-studio/cli
+# @mwjz-cli
 
 this is a full cli. Have prevalent application are choice:
 
@@ -6,10 +6,11 @@ this is a full cli. Have prevalent application are choice:
 - scaffold: Vite、Webpack
 - UI：None、Antd
 
-> npm install -g @orca-studio/cli
+> npm install -g mwjz-cli
 >
-> orca create my-project
+> mwjz create my-project
 
 <br/>
 
-[vue-template](https://github.com/orca-studio/vue-template)
+[spa-vue-template](https://github.com/yanzhangshuai/spa-vue-template)
+[mpa-vue-template](https://github.com/yanzhangshuai/mpa-vue-template)

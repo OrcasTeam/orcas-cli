@@ -1,16 +1,13 @@
 {
-	"compilerOptions": {
-		"target": "es5",
-		"module": "commonjs",
-		"lib": ["es6", "es2015", "dom"],
-		"declaration": true,
-		"outDir": "lib",
-		"rootDir": "src",
-		"strict": true,
-		"types": ["node"],
-		"esModuleInterop": true,
-		"resolveJsonModule": true,
-		"typeRoots": ["src/typing/d.ts"]
-	},
-	"include": ["src/**/*.ts"]
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "esnext",
+    "lib": ["esnext"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "typeRoots": [ "node_modules/@types", "src" ]
+  }
 }
